@@ -1,26 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div id="App">
+        <div id="Wraper">
+          <nav id="nav" className="background">
+            <div className="Home">
+              <a class="home-btn" href="/" exact="true">
+                Home
+              </a>
+            </div>
+          </nav>
+          <header>
+            <div className="title">
+                <h1>DATA EUREKA</h1>
+            </div>
+            <div className="navigation">
+              <h2>
+                {/* data we used */}
+                <a href="/data">DATA</a>
+                <p>, </p>
+                <a href="/trend">TREND</a>
+                <p>, </p>
+                <a href="/map">MAP</a>
+                <p> OF SEOUL</p>
+              </h2>
+            </div>
+            <div className="searchbar">
+              <div className="control">
+                <span className="icon-search"></span>
+                <input
+                  type="text"
+                  className="control-input"
+                  defaultValue=""
+                  placeholder="Search data or keyword"
+                />
+                <a href="/search" class="control-button">
+                  Search
+                </a>
+              </div>
+            </div>
+          </header>
+          <section>
+            <div>
+              <h1>section</h1>
+              <h4>sectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionv</h4>
+            </div>
+          </section>
+          <footer>
+            <div>
+              <h1>footer</h1>
+            </div>
+          </footer>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
