@@ -8,7 +8,7 @@ class Home extends Component {
         <div id="Wraper">
           <nav id="nav" className="background">
             <div className="menu-home">
-              <a class="home-btn" href="/" exact="true">
+              <a class="home-btn" href="/">
                 Home hi
               </a>
             </div>

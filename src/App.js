@@ -6,7 +6,7 @@ import Data from "./routes/Data";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route exact path="/" component={Home} />
       <Route path="/data" component={Data} />
     </BrowserRouter>
