@@ -6,18 +6,11 @@ class Home extends Component {
     return (
       <div id="Home">
         <div id="Wraper">
-          <nav id="nav" className="background">
-            <div className="menu-home">
-              <a class="home-btn" href="/">
-                Home hi
-              </a>
-            </div>
-          </nav>
           <header>
             <div className="title">
-                <h1>DATA EUREKA</h1>
+              <h1>DATA EUREKA</h1>
             </div>
-            <div className="navigation">
+            <div className="menu">
               <h2>
                 {/* data we used */}
                 <a href="/data">DATA</a>
@@ -37,7 +30,7 @@ class Home extends Component {
                   defaultValue=""
                   placeholder="Search data or keyword"
                 />
-                <a href="/search" class="control-button">
+                <a href="/search" className="control-button">
                   Search
                 </a>
               </div>
@@ -46,7 +39,9 @@ class Home extends Component {
           <section>
             <div>
               <h1>section</h1>
-              <h4>sectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionv</h4>
+              <h4>
+                sectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionv
+              </h4>
             </div>
           </section>
           <footer>
