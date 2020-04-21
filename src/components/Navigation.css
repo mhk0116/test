@@ -9,6 +9,7 @@
     z-index: 3;
     background: rgba(0, 0, 0, 0.5);
     margin: 0;
+    transition: top 0.2s ease-in-out;
   }
   #nav .home-btn {
     color: rgba(255, 255, 255, 0.9);
@@ -16,4 +17,10 @@
     font-family: "Source Sans Pro", sans-serif;
     text-decoration: none;
     font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  #nav .home-btn:hover{
+    color: black;
+    background-color: white;
   }

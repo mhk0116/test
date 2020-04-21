@@ -1,24 +1,30 @@
 import React, { Component } from "react";
-import axios from "axios";
 import "./Data.css";
+import Project from "../components/Project"
 
 class Data extends Component {
   state = {
     isLoading: true,
-    data: [],
-  };
-  getData = async () => {
-    const {
-      data: {
-        data: { movies },
+    // 임시 데이터 형식
+    data: [
+      {
+        id: 1,
+        project: "Personal Mobile",
+        name: ["data1", "data2", "data3", "data4"],
+        link: ["link1", "link2", "link3", "link4"],
       },
-    } = await axios.get(
-      "https://yts-proxy.now.sh/list_movies.json? sort_by=rating"
-    );
-    this.setState({ data: movies, isLoading: false });
+      {
+        id: 2,
+        project: "Charging Station",
+        name: ["data5", "data6", "data7", "data8"],
+        link: ["link5", "link6", "link7", "link8"],
+      },
+    ],
   };
   componentDidMount() {
-    this.getData();
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 3000);
   }
   render() {
     const { isLoading, data } = this.state;
@@ -30,11 +36,14 @@ class Data extends Component {
           </div>
         ) : (
           <div className="data">
-            {data.map((movie) => (
-              <div key={movie.id} className="movie">
-                <h1>{movie.title}</h1>
-                <a href={movie.url} type="botton">link</a>
-              </div>
+            {data.map((mydata) => (
+              <Project
+                key={mydata.id}
+                id={mydata.id}
+                project={mydata.project}
+                name={mydata.name}
+                link={mydata.link}
+              />
             ))}
           </div>
         )}
