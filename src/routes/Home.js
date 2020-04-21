@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 import "./Home.css";
 
 class Home extends Component {
@@ -13,11 +14,11 @@ class Home extends Component {
             <div className="menu">
               <h2>
                 {/* data we used */}
-                <a href="/data">DATA</a>
+                <Link className="quick" to="/data">DATA</Link>
                 <p>, </p>
-                <a href="/trend">TREND</a>
+                <Link className="quick" to="/trend">TREND</Link>
                 <p>, </p>
-                <a href="/map">MAP</a>
+                <Link className="quick" to="/map">MAP</Link>
                 <p> OF SEOUL</p>
               </h2>
             </div>
