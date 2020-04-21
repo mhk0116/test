@@ -9,7 +9,6 @@ function App() {
     <BrowserRouter>
       <Route exact path="/" component={Home} />
       <Route path="/data" component={Data} />
-      {/* <Home></Home>; */}
     </BrowserRouter>
   );
 }
