@@ -9,7 +9,7 @@ class Home extends Component {
           <nav id="nav" className="background">
             <div className="menu-home">
               <a class="home-btn" href="/" exact="true">
-                Home
+                Home hi
               </a>
             </div>
           </nav>
