@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 class Home extends Component {
@@ -14,11 +14,17 @@ class Home extends Component {
             <div className="menu">
               <h2>
                 {/* data we used */}
-                <Link className="quick" to="/data">DATA</Link>
+                <Link className="quick" to="/data">
+                  DATA
+                </Link>
                 <p>, </p>
-                <Link className="quick" to="/trend">TREND</Link>
+                <Link className="quick" to="/trend">
+                  TREND
+                </Link>
                 <p>, </p>
-                <Link className="quick" to="/map">MAP</Link>
+                <Link className="quick" to="/map">
+                  MAP
+                </Link>
                 <p> OF SEOUL</p>
               </h2>
             </div>
@@ -38,11 +44,20 @@ class Home extends Component {
             </div>
           </header>
           <section>
-            <div>
-              <h1>section</h1>
-              <h4>
-                sectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionsectionv
-              </h4>
+            <div className="columns">
+              <div className="column">
+                <h3 className="column-title">Accident</h3>
+                <a className="tile-pm" href="/accident/personalmobility">
+                  Personal Mobility
+                </a>
+              </div>
+
+              <div className="column">
+                <h3 className="column-title">Traffic</h3>
+              </div>
+              <div className="column">
+                <h3 className="column-title">Others</h3>
+              </div>
             </div>
           </section>
           <footer>

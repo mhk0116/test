@@ -9,7 +9,7 @@
 } */
 #Home {
   background-color: black;
-}
+} 
 #Home header {
   background-image: url(https://cdn.pixabay.com/photo/2015/11/26/02/04/jeju-island-1063203_960_720.jpg);
   background-size: cover;
@@ -49,7 +49,7 @@
   font-weight: 700;
   position: relative;
 }
-.menu .quick{
+.menu .quick {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
@@ -111,11 +111,56 @@
   border-bottom-right-radius: 2rem;
 }
 section {
-  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  font-family: "Source Sans Pro", sans-serif;
   display: block;
   width: 100%;
   word-wrap: break-word;
+}
+section .columns {
+  border: 3px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+.columns > .column {
+  /* border: 3px solid green; */
+  display: inline-block;
+  margin: 1rem auto;
+  min-width: 20rem;
+  text-align: center;
+}
+.column h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.column a {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  display: block;
+  border: 1px solid grey;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  transition: border-color 0.25s;
+  line-height: 8rem;
+}
+.column a:hover{
   color: white;
+  border: 1px solid white;
+  transform: scale(1.2);
+}
+.tile-pm{
+  background-image: url(https://lh3.googleusercontent.com/proxy/7fpwFDYh4W1qkGKWLdBde-QB5RJ5y5G1PALqnXblM1CWAg8eDwz0U6-5pz9pH1YWLMysblT4lxKHk41Uq-c3hyheSDseeWUMGEGpaOgy7EkJwWsrc2ap_TBujyhNht6spbzDb75AGYr-GIWWIFM2sb-B1VZ6Uf_iLmkyN6N_z078);
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 90%;
+  font-size: 2rem;
 }
 footer {
   color: white;
