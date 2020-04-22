@@ -134,29 +134,57 @@ section .columns {
   font-size: 3rem;
   font-weight: 400;
 }
-.column a {
+.column .tile {
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.9);
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
   display: block;
   border: 1px solid grey;
   overflow: hidden;
-  margin: 0;
+  margin: 3rem 0;
   position: relative;
   transition: border-color 0.25s;
-  line-height: 8rem;
+  line-height: 10rem;
 }
-.column a:hover{
+.column .tile:hover{
   color: white;
   border: 1px solid white;
 }
-.column .tile:hover{
+.column .tile-pm:hover{
   transform: scale(1.2);
   transition: transform 0.5s;
 }
-.tile{
+.tile-pm{
   background-image: url(https://lh3.googleusercontent.com/proxy/7fpwFDYh4W1qkGKWLdBde-QB5RJ5y5G1PALqnXblM1CWAg8eDwz0U6-5pz9pH1YWLMysblT4lxKHk41Uq-c3hyheSDseeWUMGEGpaOgy7EkJwWsrc2ap_TBujyhNht6spbzDb75AGYr-GIWWIFM2sb-B1VZ6Uf_iLmkyN6N_z078);
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 90%;
+  font-size: 2rem;
+}
+.column .tile-tj:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+.tile-tj{
+  background-image: url(https://img.kbs.co.kr/kbs/620/nsimg.kbs.co.kr/data/news/2016/02/06/3228489_HWw.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 90%;
+  font-size: 2rem;
+}
+.column .tile-cs:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+.tile-cs{
+  background-image: url(https://www.korea.kr/newsWeb/resources/attaches/2019.06/18/K4.jpg);
   background-size: cover;
   width: 100%;
   height: 10rem;

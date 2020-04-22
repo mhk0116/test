@@ -47,16 +47,24 @@ class Home extends Component {
             <div className="columns">
               <div className="column">
                 <h3 className="column-title">Accident</h3>
-                  <a className="tile-pm" href="/accident/personalmobility">
-                    <div className="tile">Personal Mobility</div>
-                  </a>
+                <Link className="tile" to="/accident/personalmobility">
+                  <div className="tile-pm">Personal Mobility</div>
+                </Link>
+                <Link className="tile" to="/accident/personalmobility">
+                  <div className="tile-pm">Personal Mobility</div>
+                </Link>
               </div>
-
               <div className="column">
                 <h3 className="column-title">Traffic</h3>
+                <Link className="tile" to="/traffic/trafficjam">
+                  <div className="tile-tj">Traffic Jam</div>
+                </Link>
               </div>
               <div className="column">
                 <h3 className="column-title">Others</h3>
+                <Link className="tile" to="/oters/chargingstation">
+                  <div className="tile-cs">Charging Station</div>
+                </Link>
               </div>
             </div>
           </section>

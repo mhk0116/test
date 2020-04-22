@@ -1,0 +1,87 @@
+.container {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  font-family: "Source Sans Pro", sans-serif;
+}
+.PM {
+  border: 3px solid red;
+  margin: 10px;
+  align-items: center;
+}
+.PM > * {
+  border: 3px solid green;
+}
+header {
+  background-image: url(https://www.businessdestinations.com/wp-content/uploads/2019/07/Seoul.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 39rem;
+  background-position-x: center;
+  background-position-y: 75%;
+  border-bottom: 1px solid white;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75);
+  font-family: "Source Sans Pro", sans-serif;
+}
+header::before {
+  background-image: linear-gradient(
+    rgba(20, 27, 46, 0),
+    rgba(20, 27, 46, 0),
+    rgba(20, 27, 46, 0.5)
+  );
+  width: 100%;
+  left: 0;
+  top: 1;
+  height: 39rem;
+  position: absolute;
+  content: "";
+}
+header .title h1 {
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 8rem;
+}
+header .stat h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
+.stat div {
+  margin: 0 auto;
+}
+.stat h3 {
+  font-weight: 400;
+}
+.stat p {
+  font-size: 3rem;
+  font-weight: 400;
+}
+section .topic{
+  background-color: white;
+  text-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section h1 {
+  color: black;
+  font-size: 4rem;
+  padding: 2rem;
+}
+section p {
+  color: black;
+  font-size: 1rem;
+  padding-left: 2rem;
+  line-height: 2.5rem;
+  text-align: left;
+}
+section .chart{
+    text-align: center;
+}
