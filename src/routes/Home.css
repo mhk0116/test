@@ -150,9 +150,12 @@ section .columns {
 .column a:hover{
   color: white;
   border: 1px solid white;
-  transform: scale(1.2);
 }
-.tile-pm{
+.column .tile:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+.tile{
   background-image: url(https://lh3.googleusercontent.com/proxy/7fpwFDYh4W1qkGKWLdBde-QB5RJ5y5G1PALqnXblM1CWAg8eDwz0U6-5pz9pH1YWLMysblT4lxKHk41Uq-c3hyheSDseeWUMGEGpaOgy7EkJwWsrc2ap_TBujyhNht6spbzDb75AGYr-GIWWIFM2sb-B1VZ6Uf_iLmkyN6N_z078);
   background-size: cover;
   width: 100%;

@@ -47,9 +47,9 @@ class Home extends Component {
             <div className="columns">
               <div className="column">
                 <h3 className="column-title">Accident</h3>
-                <a className="tile-pm" href="/accident/personalmobility">
-                  Personal Mobility
-                </a>
+                  <a className="tile-pm" href="/accident/personalmobility">
+                    <div className="tile">Personal Mobility</div>
+                  </a>
               </div>
 
               <div className="column">
