@@ -5,7 +5,6 @@ import Liv from "../components/Liv";
 
 class Data extends Component {
   state = {
-    isLoading: true,
     // 임시 데이터 형식
     data: [
       {
@@ -22,20 +21,10 @@ class Data extends Component {
       },
     ],
   };
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ isLoading: false });
-    }, 3000);
-  }
   render() {
-    const { isLoading, data } = this.state;
+    const { data } = this.state;
     return (
       <section className="container">
-        {isLoading ? (
-          <div className="loader">
-            <span className="loader__text">Loading...</span>
-          </div>
-        ) : (
           <div className="data">
             {data.map((mydata) => (
               <Project
@@ -47,8 +36,7 @@ class Data extends Component {
               />
             ))}
           </div>
-        )}
-        <Liv />
+        <Liv />    {/* 라이브리 댓글기능 */}
       </section>
     );
   }

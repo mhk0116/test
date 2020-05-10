@@ -11,7 +11,7 @@ class Home extends Component {
             <div className="title">
               <h1>DATA EUREKA</h1>
             </div>
-            <div className="menu">
+            <div className="menu">    {/*타이틀과 검색창 사이 메뉴들*/}
               <h2>
                 {/* data we used */}
                 <Link className="quick" to="/data">
@@ -45,7 +45,7 @@ class Home extends Component {
           </header>
           <section>
             <div className="columns">
-              <div className="column">
+              <div className="column">    {/* 가장 왼쪽 열 */}
                 <h3 className="column-title">Accident</h3>
                 <Link className="tile" to="/accident/personalmobility">
                   <div className="tile-pm">Personal Mobility</div>
@@ -54,13 +54,13 @@ class Home extends Component {
                   <div className="tile-pm">Personal Mobility</div>
                 </Link>
               </div>
-              <div className="column">
+              <div className="column">    {/* 그 다음 열 */}
                 <h3 className="column-title">Traffic</h3>
                 <Link className="tile" to="/traffic/trafficjam">
                   <div className="tile-tj">Traffic Jam</div>
                 </Link>
               </div>
-              <div className="column">
+              <div className="column">    {/* 그 다음다음 열 */}
                 <h3 className="column-title">Others</h3>
                 <Link className="tile" to="/oters/chargingstation">
                   <div className="tile-cs">Charging Station</div>
