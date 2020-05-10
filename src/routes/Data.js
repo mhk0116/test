@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Data.css";
 import Project from "../components/Project"
+import Liv from "../components/Liv";
 
 class Data extends Component {
   state = {
@@ -47,6 +48,7 @@ class Data extends Component {
             ))}
           </div>
         )}
+        <Liv />
       </section>
     );
   }
